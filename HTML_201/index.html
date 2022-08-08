@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML 201</title>
+    <link rel="shortcut icon" href="images/favicons/dragon_ball.png" type="image/png">
+</head>
+
+<body>
+
+<div id="top">
+    <a href="#bottom">
+        Go to the bottom of the page
+    </a>
+</div>
+
+    <p>
+        <span style = "text-decoration: underline;"> 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </span>
+        porro aliquam alias, ratione doloremque deserunt voluptate 
+        perspiciatis. Ab deleniti minus nemo rerum, placeat eum cum 
+        officia delectus praesentium, ducimus tenetur veniam?
+    </p>
+
+<img src="images/computer.jpg" alt="computer">
+
+
+<table border="1", width="100%">
+    <tr>
+        <td> CELL 1</td> <td>CELL 2</td> <td>CELL 3</td>
+    </tr>
+    <tr>
+        <td> CELL 1</td> <td>CELL 2</td> <td>CELL 3</td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<table border="1", width="100%">
+    <tbody>
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td> 
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>2</td> 
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+
+<table border="1" width="100%">
+    <tr>
+        <th colspan="2"> WELCOME TO MY WEBSITE </th>
+    </tr>
+    <tr>
+        <td width="20%">
+            <h3>Navigation</h3>
+        </td>
+        <td>
+            <h3>Content</h3>
+        </td>
+    </tr>
+</table>
+
+<style>
+    .classNameHere{
+        padding: 40px; 
+        color: white; 
+        background-color: black;
+    }
+
+    .uppercase{
+        text-transform: uppercase;
+    }
+
+    #testingId {
+        border: 15px solid red;
+    }
+</style>
+
+<div class="classNameHere">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quam tenetur quas modi omnis consectetur! Hic sequi, natus 
+    dolor neque doloribus nobis impedit tenetur inventore 
+    accusamus asperiores dolorem saepe illum. Delectus?
+</div>
+
+<div id = "testingId">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quam tenetur quas modi omnis consectetur! Hic sequi, natus 
+    dolor neque doloribus nobis impedit tenetur inventore 
+    accusamus asperiores dolorem saepe illum. Delectus?
+</div>
+
+<div class="classNameHere uppercase">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Quam tenetur quas modi omnis consectetur! Hic sequi, natus 
+    dolor neque doloribus nobis impedit tenetur inventore 
+    accusamus asperiores dolorem saepe illum. Delectus?
+</div>
+
+<h3>Format code</h3>
+<pre>
+    Some       stuff    here &lt;b&gt; This is the html sintax to make bold letters and words &lt;/b&gt;;
+    Second     line     here
+</pre>
+<p>
+    <code> Lorem ipsum dolor           sit amet consectetur adipisicing elit. </code>
+    Quam qui in alias. Quibusdam, natus distinctio, impedit 
+    vel omnis ad nemo in libero obcaecati optio, nihil autem 
+    nulla. Voluptates, quidem expedita.
+</p>
+
+<h3>Forms</h3>
+<form action="" method="GET">
+    <input required name = "email" type = "email" placeholdernamevalue = "Hello, world!">
+    <br>
+    <div></div>
+    <hr>
+    <textarea required name="address" cols="50" rows="20" placeholder="WOW a placeholder!">Text in here</textarea>
+    <br>
+    <div>
+     <select name="selected_option">
+        <option value="" disabled = 'disabled'>
+            -Disabled-
+        </option>
+        <option value="value1"> This is the Value 1</option>
+        <option value="value2"> This is the Value 2</option>
+        <option value="value3"> This is the Value 3</option>
+        <option value="value4"> This is the Value 4</option>
+        <option value="default-is-selected" selected = 'selected'> 
+            Selected by Defaut
+        </option>
+        
+     </select>
+    </div>
+    <button type = "submit">Click me!</button>
+</form>
+
+<br>
+<br>
+
+<h3>Embeds</h3>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/ahcmNsNjQUw" 
+title="YouTube video player" 
+frameborder="0" 
+allowfullscreen></iframe>
+
+<div id= "bottom">
+    <a href="#top">Go to the top of the page</a>
+    &copy;2022
+</div>
+</body>
+</html>

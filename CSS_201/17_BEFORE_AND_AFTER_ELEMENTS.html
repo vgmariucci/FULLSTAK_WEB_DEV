@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 201</title>
+    <style>
+       .box{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position:relative;
+            background-color: black;
+            }
+        .box::before{
+            content: ' ';
+            display: block;
+            border: 10px solid red;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            z-index: -1;
+        }
+        .box::after {
+            content: ' ';
+            display: block;
+            border: 10px solid blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            z-index: 1;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a::before{
+            content: ' ';
+            width: 100%;
+            height: 4px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        a:hover::before{
+            height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id = "parent">
+        <div class = "box">
+            
+        </div>
+        <hr>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequatur,
+        <a href="#">Give this a border</a> 
+        reiciendis quisquam voluptate perferendis sapiente! Aliquid in aliquam dolorum 
+        deleniti asperiores nobis, repudiandae, repellendus, assumenda sint porro eos quis numquam!
+    </div>
+</body>
+</html>
