@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL_PROJECT_CSS_201</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+
+       
+/***********************************************************
+        BODY CLASSES
+************************************************************/
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Uchen', serif;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 3px;
+            grid-row-gap: 3px;
+        }
+/***********************************************************
+        MAIN HEADER CLASSES
+************************************************************/
+        .header_space{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .header_border {
+            border: 1px solid blue;
+        }
+
+        .header_master {
+            text-align: center;
+            position: relative;
+            padding: 15px;
+        }
+
+        .navigation_border {
+            border: 1px solid red;
+
+        }
+
+        .navigation_header {
+            position: relative;
+            padding: 10px;
+
+        }
+
+        .navigation_space {
+            grid-column-start: 1;
+            grid-column-end: 2
+        }
+
+        .navigation_topics {
+            padding: 10px;
+        }
+/***********************************************************
+        CONTENTS CLASSES
+************************************************************/
+        .contents_border {
+            border: 1px solid greenyellow;
+        }
+
+        .contents_header {
+            position: relative;
+            padding: 30px;
+        }
+
+        .contents {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .item_contents {
+            
+            padding: 30px;
+           
+        }
+
+/***********************************************************
+        DISPLAY BLOCKS CLASS
+************************************************************/
+        .display-block {
+            display: block;
+            border: 1px solid red;
+            padding: 5px;
+            margin: 2px;
+        }
+
+
+/***********************************************************
+        DISPLAY INLINE-BLOCKS CLASS
+************************************************************/
+.display-inline-block {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 2px;
+}
+
+/***********************************************************
+    BOX-MODEL CLASSES
+************************************************************/
+.box-model1{
+    display: inline-block;
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.box-model2{
+    display: inline-block;
+    border: 5px solid red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+    .box-model3{
+        display: inline-block;
+        border: 5px solid red;
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+
+/***********************************************************
+    OUTLINE-BOX CLASSES
+************************************************************/
+    .outline-box-model1{
+        display: inline-block;
+        border: 5px solid red;
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        margin: 5px;
+        box-sizing: border-box;
+        outline: 5px solid blue;
+        outline-offset: 10px;
+        margin: 30px;
+    }
+
+    .outline-box-model2{
+        display: inline-block;
+        border: 5px solid red;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 50%;
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        margin: 5px;
+        box-sizing: border-box;
+        outline: 5px solid blue;
+        outline-offset: 10px;
+    
+    }
+
+    .outline-box-model3{
+        display: inline-block;
+        border: 5px solid red;
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        margin: 5px;
+        box-sizing: border-box;
+        outline: 5px solid blue;
+        outline-offset: 10px;
+        margin: 30px;
+    }
+
+/***********************************************************
+    TEXT-SHADOW CLASSES
+************************************************************/
+
+    .text-shadow1 {
+        font-size: 20px;
+        text-shadow: 2px 2px 3px red;
+        color: rgba(0, 0, 0, 0)
+    }
+
+    .text-shadow2 {
+        font-size: 30px;
+        text-shadow: 3px 3px 2px cyan;
+        color: rgba(0, 0, 0, 2);
+    }
+
+    .text-shadow3 {
+        font-size: 40px;
+        text-shadow: 2px 2px 5px yellow;
+        color: rgba(0, 0, 0, 5);
+    }
+
+/***********************************************************
+        MAXIMUM AND MINIMUM WIDTHS CLASSES
+************************************************************/
+    .max-min-width1{
+        border: 2px solid blue;
+        display: block;
+        min-width: 500px;
+        max-width: 1000px;
+        box-sizing: border-box;
+    }
+    .max-min-width2{
+        border: 2px solid blue;
+        display: block;
+        min-width: 400px;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+    .max-min-width3{
+        border: 2px solid blue;
+        display: block;
+        min-width: 50px;
+        max-width: 100px;
+        box-sizing: border-box;
+    }
+
+/***********************************************************
+        RELATIVE-POSITION CLASSES
+************************************************************/
+    .box-model-relative-position0{
+        display: inline-block;
+        border: 5px solid red;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .box-model-relative-position1{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .box-model-relative-position2{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        top: 0%;
+        left: 35%;
+    }
+    .box-model-relative-position3{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+
+    .box-model-relative-position4{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        bottom: 40%;
+        right: 0%;
+    }
+
+    .box-model-relative-position5{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+    }
+
+    .box-model-relative-position6{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .box-model-relative-position7{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        bottom: 0%;
+        left: 35%;
+    }
+
+    .box-model-relative-position8{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    .box-model-relative-position9{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid  yellow;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
+/***********************************************************
+        FIXED POSITION BOX CLASS
+************************************************************/
+    .fixed_box_element{
+        border: 2px solid magenta;
+        padding: 2px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 20%;
+    }
+
+/***********************************************************
+        STICKY POSITION BOX CLASS
+************************************************************/
+    .sticky_box_element{
+       
+        border: 2px solid blueviolet;
+        padding: 2px;
+        position: sticky;
+        top: 10px;
+        right: 10px;
+        width: 25%;
+    }
+
+/***********************************************************
+        OVERFLOW ATTRIBUTE
+************************************************************/
+    .overflow_box{
+            width: 200px;
+             height: 200px;
+             width: 80%;
+             border: 5px solid  yellow;
+             overflow: auto;
+    }
+/***********************************************************
+       CENTERED ATTRIBUTES
+************************************************************/
+    .centered_box{
+            border: 4px solid orange;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 50px auto;
+    }
+
+ .centered_text_in_the_box{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 20px auto;
+    }
+/***********************************************************
+       ADVANCED SELECTORS
+************************************************************/
+/* Child selector ">" */
+  #parent_1 > .advanced_selector_elements{
+            height: 20px;
+            border: 1px solid blue;
+        }
+/* Json selector "+" */
+  #parent_1 .advanced_selector_elements + .advanced_selector_elements{
+            background-color: magenta;
+        }
+
+/* Child selector ">" */
+            #parent_2 > .advanced_selector_elements{
+            height: 20px;
+            border: 1px solid red;
+        }
+
+/* Sibling selector "~" */
+   #parent_2 .advanced_selector_elements ~ .advanced_selector_elements{
+            background-color: cyan;
+        }
+
+
+/***********************************************************
+       PSEUDO SELECTORS
+************************************************************/
+    #pseudo_selector_parent > .pseudo_selector_elements{
+    height: 20px;
+    border: 1px solid blue;
+    } 
+/*Pseudo selector not*/
+    .pseudo_selector_elements:not(.no_parent_effect){
+        background-color: aqua;
+    }
+
+/*Pseudo selector hover*/
+    .pseudo_selector_elements:hover{
+        background-color: red;
+    }
+
+/*Pseudo selector nth-child*/
+    .pseudo_selector_elements:nth-child(4){
+        background-color: orange;
+    }
+
+/***********************************************************
+       BEFORE & AFTER PSEUDO ELEMENTS
+************************************************************/
+    .box-element{
+       width: 200px;
+       height: 200px;
+       border: 20px solid blue;
+       background-color: blueviolet;   
+       margin: 25px auto;
+       position: relative;
+    }
+    
+    .box-element::before{
+       content: ' ';
+       display: block;
+       width: 100%;
+       height: 100%;
+       border: 20px solid greenyellow;
+       margin: 25px auto;
+       position: relative;
+       background-color: green;
+       position: absolute;
+       top: -80px;
+       left: -60px;
+       z-index: -1;
+    }
+  
+    .box-element::after{
+       content: ' ';
+       display: block;
+       width: 100%;
+       height: 100%;
+       border: 20px solid orange;
+       margin: 25px auto;
+       position: relative;
+       background-color: magenta;
+       position: absolute;
+       bottom: -90px;
+       right: -60px;
+       z-index: 1;
+    }
+
+/***********************************************************
+       FIRST LETTER & FIRST LINE
+************************************************************/    
+    .first_letter::first-letter{
+        font-size: 60px;
+        color: chartreuse;
+        margin: 10px;
+    }
+
+    .first_line::first-line{
+        font-weight: bold;
+        color: gold;
+    }
+
+/***********************************************************
+       SELECTION EFFECTS
+************************************************************/
+    .selection_effect::selection{
+        background-color: orange;
+        color: black;
+    }
+
+/***********************************************************
+       TRANSITIONS
+************************************************************/
+    .transition_1{
+        padding: 20px;
+        transition: background-color 0.2s,
+                    font-weight 0.5s,
+                    color 0.5s;
+    }
+
+    .transition_1:hover{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+
+    .transition_2{
+        padding: 20px;
+        transition: background-color 1s,
+                    font-size 1s,
+                    color 2s;
+    }
+
+    .transition_2:hover{
+        background-color: orange;
+        color: green;
+        font-size: 20px;
+        
+    }
+
+    .transition_3{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: 2px solid red;
+        transition: background-color 0.2s,
+                    color 0.2s,
+                    padding 0.5s;
+    }
+
+    .transition_3:hover{
+        background-color: black;
+        color: white;
+        padding: 15px 30px;
+        border: 2px solid white;
+    }
+
+/***********************************************************
+       GRADIENT BACKGROUND 
+************************************************************/
+    .gradient_background_1{
+         /*
+            background-image: linear-gradient(45deg, black, yellow);
+            */
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(45deg, rgba(2,0,36,1) 18%, rgba(9,9,121,1) 36%, rgba(0,255,201,0.8379726890756303) 89%);
+    }
+    
+    .gradient_background_2{
+            
+            height: 200px;
+            width: 100%;
+            color: black;
+            font-weight: bold;
+            background: linear-gradient(-45deg, black, yellow);
+    }
+
+/***********************************************************
+       LAYERED GRADIENT BACKGROUND 
+************************************************************/
+    .layered_gradient_background{
+        
+        height: 400px;
+        width: 100%;
+        background-image: 
+                        linear-gradient(180deg, 
+                        rgba(0, 0, 0, 0.3) 0%, 
+                        rgba(0,0,0,0.8)),
+                        url("https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            color: white;
+            font-size: 20px;
+            text-align: center;
+    }
+
+/***********************************************************
+       CUSTOM WEB FONTS 
+************************************************************/
+    .custom_web_fonts{
+        background-color: black;
+        color: white;
+        font-family: 'Pacifico', cursive; 
+        font-size: 20px;
+    }
+/***********************************************************
+       TRANSFORMATIONS 
+************************************************************/
+    .transformation_1{
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        border: 10px solid white;
+        margin: 50px auto;
+        padding: 30px;
+        transform: skewY(20deg);
+    }
+
+    .transformation_2{
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        left: 50px;
+        color: chartreuse;
+        border: 10px solid yellow;
+        margin: 50px auto;
+        padding: 30px;
+        transform: skew(20deg, 20deg);
+    }
+   
+    .transformation_3{
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        left: 150px;
+        color: red;
+        border: 10px solid blue;
+        margin: 50px auto;
+        padding: 30px;
+        transform: translate(100px, 100px);
+        transform: rotate(45deg);
+        transform: scale(1.2);
+       }
+
+/***********************************************************
+       ANIMATIONS 
+************************************************************/ 
+       .animation_box{
+        height: 400px;
+        width: 400px;
+        margin: 10px 5px;
+        
+       }
+       .animation_1{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 10px solid yellow;
+        background-color: #ffffff;
+        border-radius: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        animation-name: slideMe;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+       }
+
+       @keyframes slideMe {
+        0% {
+            top: 0%;
+            left: 0%;
+        }
+        25% {
+            background-color: cyan;
+            top: 0%;
+            left: 100%;
+        }
+        50% {
+            background-color: orange;
+            top: 60%;
+            left: 100%;
+        }
+        75% {
+            background-color: magenta;
+            top: 60%;
+            left: 0%;
+        }
+        100% {
+            background-color: greenyellow;
+            top: 0%;
+            left: 0%;
+        }
+    }
+       .animation_2{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 10px solid magenta;
+        background-color: cyan;
+        border-radius: 5%;
+        position: relative;
+        top: 30%;
+        left: 85%;
+        animation-name: rotateMe;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+       }
+
+       @keyframes rotateMe {
+        0% {
+            rotate: 0deg;
+           
+        }
+        25% {
+            background-color: cyan;
+            rotate: 45deg;
+        }
+        50% {
+            background-color: orange;
+            rotate: 90deg;
+        }
+        75% {
+            background-color: magenta;
+            rotate: 135deg;
+        }
+        100% {
+            background-color: rgb(255, 47, 57);
+            rotate: 180deg;
+        }
+    }
+
+/***********************************************************
+        FLEXBOX
+************************************************************/
+    *{
+        box-sizing: border-box;
+    }
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #container div {
+        border: 2px solid yellow;
+    }
+    .navi_container {
+        flex-basis: 20%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        padding: 20px;
+        background-color: darkgreen;
+    }
+    .content_container{
+        flex-basis: 80%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 20px;
+        background-color: darkblue;
+    }
+    .header_container{
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: purple;
+    }
+
+/***********************************************************
+        FOOTNOTES CLASSES
+************************************************************/
+        .footnotes_border {
+            border: 1px solid magenta
+        }
+
+        .footnotes_space {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .footnotes_contents{
+            text-align: center;
+            position: relative;
+            padding: 30px;
+        }
+        .link_to_navibar_at_footnotes{
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+   <div id = "grid">
+
+        <div class="header_border header_space">
+            <h1 class="header_master">CSS-201 FINAL PROJECT</h1>
+        </div>
+        
+        <div class="navigation_border navigation_space" id = "navigation">
+            
+            <h3 class="navigation_header">NAVIGATION COLUMN</h3>
+            
+            <ul>
+                <li class="navigation_topics">
+                    <a href="#objectives">OBJECTIVES</a>
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#disp-block">DISPLAY BLOCK</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#disp-inline-block">DISPLAY INLINE-BLOCK</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#box-model">BOX-MODEL</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#outline-box">OUTLINE-BOX</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#text-shadow">TEXT-SHADOW</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#min-max-width">MIN-MAX WIDTH</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#relative-absolute-position">RELATIVE & ABSOLUTE POSITIONS</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#fixed-position">FIXED POSITION</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#sticky-position">STICKY POSITION</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#overflow">OVERFLOW</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#centered_element">CENTERED ELEMENTS</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#pseudo_selectors">PSEUDO SELECTORS</a> 
+                </li>
+              
+                <li class="navigation_topics">
+                    <a href="#before_&_after_elements">BEFORE & AFTER</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#first_letter_&_first_line">FIRST LETTER & FIRST LINE</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#selection">SELECTION</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#transitions">TRANSITIONS</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#gradient_background">GRADIENT BACKGROUND</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#layering_gradient_background">LAYERING GRADIENTS ON BACKGROUND</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#custom_web_fonts">CUSTOM WEB FONTS</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#transformation">TRANSFORMATION</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#animation">ANIMATIONS</a> 
+                </li>
+                
+                <li class="navigation_topics">
+                    <a href="#flexbox">FLEXBOX</a> 
+                </li>
+            </ul>
+
+        </div>
+        
+        <div class="contents_border contents">
+        
+            <h3 class = "contents_header">CONTENTS</h3>
+        
+            <div class="item_contents" id="objectives">
+                
+                  <h4>OBJECTIVES</h4>
+                        <div>
+                            
+                                The objectives for this final project is to show as many as CSS tools 
+                            learned from the ULTIMATE FULL STACK WEB DEV COURSE.
+                            </p>
+
+                            <p>
+                                For this reason, the layout of the page was built using the CSS grid style. 
+                                The page is organized in 4 main regions: 
+                            
+                                <ol>
+                                    <li>Main Header Area</li>
+                                    <li>Navigation Column Area</li>
+                                    <li>Contents Area</li>
+                                    <li>Footnotes Area</li>
+                                </ol>
+                                 
+                            </p>
+
+                            <p>
+                                <ul>
+                                    <li>
+                                        In the main header area we have the CSS-201 FINAL PROJECT text.
+                                    </li>
+                                    <li>
+                                        In the navigation columns there are links to get access to each CSS example
+                                        demonstration.
+                                    </li>
+                                    <li>
+                                        In the contents area we place all examples and explanations like this one.
+                                    </li>
+                                </ul>
+                                 
+
+                            <p>
+                                The footnotes area were reserved to placing some complementary information
+                                about the page and its developers.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <a href="#navigation"> Back to Navigation Topics</a>
+                        </div>
+                
+            </div>
+            
+            <div class="item_contents" id="disp-block">
+                   
+                    <h4>DISPLAY BLOCK</h4>
+                        
+                        <p>
+                            Here we show an example of the "display: block" CSS.
+                        </p>
+                        <p>
+                            The "display: block" class is used to group elements together as shown 
+                            below:
+                        </p>
+                          
+                        <div class="display-block">
+                            <div>Item 1</div>
+                            <div>Item 2</div>
+                            <div>Item 3</div>
+                        </div>
+
+                        <div class="display-block">Item 4</div>
+                        <div class="display-block">Item 5</div>
+                        <div class="display-block">Item 6</div>
+                        <br>
+                        
+                        <div>
+                            <a href="#navigation"> Back to Navigation Topics</a>
+                        </div>
+                
+            </div>
+            
+            <div class="item_contents" id="disp-inline-block">
+                   
+                    <h4>DISPLAY INLINE-BLOCK</h4>
+                        
+                        <p>
+                            Here we show an example of the "display: inline-block" CSS.
+                        </p>
+                        <p>
+                            The "display: inline-block" class is used to group elements together in a row (line) as shown 
+                            below:
+                        </p>
+                          
+                        <div class="display-inline-block">
+                            <div>Item 1</div>
+                            <div>Item 2</div>
+                            <div>Item 3</div>
+                        </div>
+
+                        <div class="display-inline-block">Item 4</div>
+                        <div class="display-inline-block">Item 5</div>
+                        <div class="display-inline-block">Item 6</div>
+                        <br>
+                        
+                        <div>
+                            <a href="#navigation"> Back to Navigation Topics</a>
+                        </div>
+                
+            </div>
+            
+            <div class="item_contents" id = "box-model">
+                
+                <h4>BOX-MODEL</h4>
+                    <p>
+                        The ".box" model class allow us to draw boxes with different sizes, shapes and positions.
+                        It allows us insert other elements or contents into the box. 
+                        <br>
+                        Below are some examples on how to use it:
+                    </p>
+                
+                    <div>
+
+                        <div class="box-model1">
+                            box-model1                   
+                        </div>
+                        
+                        <div class="box-model2">
+                            box-model2
+                        </div>
+                        
+                        <div class="box-model3">
+                            box-model3
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+            
+            </div>
+
+            <div class="item_contents" id = "outline-box">
+                
+                <h4>OUTLINE-BOX</h4>
+                    <p>
+                        The "outline" class allow us to draw boxes with different sizes, shapes and positions as done before.
+                        Bur now it draws another box out of the original box, like a contour.
+                        It also allows us inserting other elements or contents into the box. 
+                        <br>
+                        Below are some examples on how to use it:
+                    </p>
+                
+                    <div>
+                        <div class="outline-box-model1">
+                            outline-box-model1                   
+                        </div>
+                        
+                        <div class="outline-box-model2">
+                            outline-box-model2
+                        </div>
+                        
+                        <div class="outline-box-model3">
+                            outline-box-model3
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+            
+            </div>
+            
+            <div class="item_contents" id = "text-shadow">
+                
+                <h4>TEXT-SHADOW</h4>
+                <p>
+                    As the name says, the "text-shadow" class is used to draw 
+                    shadows on the text.
+                    <br>
+                    
+                </p>
+                
+                <div class = "text-shadow1">
+                    THIS IS AS TEXT WITH SHADOWS 1
+                </div>
+                <div class = "text-shadow2">
+                    THIS IS AS TEXT WITH SHADOWS 2
+                </div>
+                <div class = "text-shadow3">
+                    THIS IS AS TEXT WITH SHADOWS 3
+                </div>
+
+                <div>
+                    <a href="#navigation"> Back to Navigation Topics</a>
+                </div>
+        
+            </div>
+            
+            <div class="item_contents" id = "min-max-width">
+                
+                <h4>MIN-MAX WIDTH</h4>
+                    <p>
+                        The "min-width" and "max-width" attributes are required to be specified into
+                        CSS class as limitations of the size of the element.
+                    </p>
+        
+                        <div class = "max-min-width1">
+                            THIS IS AN ELEMENT WITH MAXIMUM WIDTH EQUALS TO 1000px AND 
+                            A MINIMUM WIDTH EQUALS TO 500px
+                        </div>
+                        
+                        <div class = "max-min-width2">
+                            THIS IS AN ELEMENT WITH MAXIMUM WIDTH EQUALS TO 500px AND 
+                            A MINIMUM WIDTH EQUALS TO 400px
+                        </div>
+                        <div class = "max-min-width3">
+                            THIS IS AN ELEMENT WITH MAXIMUM WIDTH EQUALS TO 100px AND 
+                            A MINIMUM WIDTH EQUALS TO 50px
+                        </div>
+                        
+                        <div>
+                            <a href="#navigation"> Back to Navigation Topics</a>
+                        </div>
+                
+            </div>
+            
+            <div class="item_contents" id = "relative-absolute-position">
+                
+                <h4>RELATIVE & ABSOLUTE POSITION</h4>
+                    <p>
+                        The "relative: position" and "absolute: position"  attributes specifies the position of an element 
+                        (as the name says: relative or absolute) to other elements. 
+                        Below are illustrated these attributes with box elements inside another box elements,
+                        where the internal positions of the minor boxes is determined relative to the 
+                        boundaries of the outer element.
+                    </p>
+        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position1">
+                            </div>
+                        </div>
+                                
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position2">
+                            </div>
+                        </div>
+                                
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position3">
+                            </div>
+                        </div>
+                               
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position4">
+                            </div>
+                        </div>
+                            
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position5">
+                            </div>
+                        </div>
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position6">
+                            </div>
+                        </div>
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position7">
+                            </div>
+                        </div>
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position8">
+                            </div>
+                        </div>
+                        
+                        <div class="box-model-relative-position0">
+                            <div class="box-model-relative-position9">
+                            </div>
+                        </div>
+                            
+                        <div>
+                            <a href="#navigation"> Back to Navigation Topics</a>
+                        </div>
+                       
+            </div>
+
+            <div class="item_contents" id = "fixed-position">
+                
+                <h4>FIXED POSITION</h4>
+                    <p>
+                        The "position: fixed" attribute is used when we need some element must 
+                        be fixed as the name says in a certain place of the page. 
+                    </p>
+
+                    <p>
+                        If the fixed element is not visible, just uncomment the commands in the code 
+                        file (FINAL_PROJECT_CSS_201.html).
+                        
+                        The fixed box filled with the text "This is a fixed positioned element" 
+                        appears on top right corner of the page. As we scroll up
+                        or down, the fixed element keeps its position. 
+                    </p>
+
+                    <!-- <div class="fixed_box_element">
+                        <h5 class="display-block">
+                            This is a fixed positioned element
+                        </h5>
+                    </div> -->
+                        
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+
+                       
+            </div>
+
+            <div class="item_contents" id = "sticky-position">
+                
+                <h4>STICKY POSITION</h4>
+                    <p>
+                        The "position: sticky" attribute is used when we need that some element must be fixed 
+                        or sticky (glued) in a certain place of the page. 
+                        When we scroll up and down, the sticky element follows the scroll direction until another 
+                        sticky element appears, taking the place of the first one. 
+                    </p>
+
+                    <p>
+                        If the sticked element is not visible, just uncomment the commands in the code 
+                        file (FINAL_PROJECT_CSS_201.html).
+                        
+                        The sticked boxes filled with the texts "Sticky Element 1" and "Sticky Element 2" 
+                        appear as follows: 
+                    </p>
+                    
+                    <!-- <div class="sticky_box_element">
+                        <h5 class="display-block">
+                            Sticky Element 1
+                        </h5>
+                    </div>
+
+                    <p> 
+                        <h3>
+                            Some Dummy Text in Here
+                        </h3>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    
+                    <div class="sticky_box_element">
+                        <h5 class="display-block">
+                            Sticky Element 2
+                        </h5>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi hic laboriosam, fugiat omnis earum vel illo ad fugit vero esse. Veniam ex quaerat dicta minima debitis quas laboriosam accusamus!</p>
+                         -->
+                    
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "overflow">
+                
+                <h4>OVERFLOW</h4>
+
+                    <p>
+                        The "overflow" attribute is used to fit big size texts into box type elements, as follows:
+                    </p>
+                    
+
+                        <div class="overflow_box">
+                            <h4>Some Dummy Texts to Fill the Box</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati unde ut ab saepe expedita vero dolore facilis non, aspernatur corporis nemo tempore iure recusandae reprehenderit alias! Quia, architecto aliquid!</p>
+                        </div>
+                    
+                    
+
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "centered_element">
+                <h4>CENTERED ELEMENTS</h4>
+
+                    <p>
+                        The following attributes are used to centralize elements on the page or inside 
+                        another elements:
+                        <br>
+                        margin-left: auto;
+                        <br>
+                        margin-right: auto;
+                        <br>
+                        margin: 50px auto; 
+                    <p>
+                        
+            
+
+                        <div class="centered_box">
+                            <h4 class="centered_text_in_the_box">
+                                THIS IS A CENTERED 
+                                TEXT INSIDE A 
+                                CENTERED BOX ELEMENT
+                            </h4>
+                        </div>
+                    
+                    
+
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "advanced_selectors">
+                <h4>ADVANCED SELECTORS</h4>
+
+                    <p>
+                        Advanced selectors are useful when we want to pass some style configurations  
+                        for an entire group of elements. 
+                    <p>
+                    <p>
+                        There are many different advanced selectors in CSS. Some commonly used advanced selectors are:
+                            <ul>
+                                <li>
+                                    Child selector: >
+                                </li>
+                                <li>
+                                    Json selector: +
+                                </li>
+                                <li>
+                                    Sibling selector: ~
+                                </li>
+                            </ul>
+                    </p>
+            
+                    <div id = "parent_1">
+                        <div class="advanced_selector_elements">
+                            Note that this element is not affeceted by the advanced selectors!
+                        </div>
+                        <div class="advanced_selector_elements"></div>
+                        <div class="advanced_selector_elements"></div>
+                        <div class="advanced_selector_elements"></div>
+                    </div>
+                    
+                    <div id = "parent_2">
+                        <div class="advanced_selector_elements">
+                            Note that this element is not affeceted by the advanced selectors!
+                        </div>
+                        <div class="advanced_selector_elements"></div>
+                        <div class="advanced_selector_elements"></div>
+                    </div>
+                    
+                    <div class="advanced_selector_elements">
+                        This element does not belong to the #parent ids (#parent_1 and #parent_2). So it 
+                        not affected by the advanced selectors. 
+                    </div>
+                    
+
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "pseudo_selectors">
+                <h4>PSEUDO SELECTORS</h4>
+
+                    <p>
+                        Pseudo selectors are used almost like the advanced selectors saw before. 
+                    <p>
+                    <p>
+                        The diffrence is that we can use the advanced selectors as before to pass
+                        a class to a group of elements, but also we can indicate using a pseudo selector
+                        what effects is allowed to the elements.
+                    </p>
+                    <p> The pseudo selectors are used with the following sintax:
+                        <br>
+                        .class_name : pseudo_selector {
+                            attributes ...
+                        }
+                    </p>
+                    <div id = "pseudo_selector_parent">
+                        <div class="pseudo_selector_elements"> </div>
+                        <div class="pseudo_selector_elements"></div>
+                        <div class="pseudo_selector_elements"></div>
+                        <div class="pseudo_selector_elements"></div>
+                        <div class="pseudo_selector_elements"></div>
+                        <div class="pseudo_selector_elements no_parent_effect"></div>
+                        <div class="pseudo_selector_elements"></div>
+                        <div class="pseudo_selector_elements"></div>
+                    </div>
+                    
+                    
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "before_&_after_elements">
+                <h4>BEFORE & AFTER</h4>
+
+                    <p>
+                        "::before" and "::after" pseudo elements allow us to give an effect of
+                        stacking or layering the elements with each other.
+                    <p>
+                  
+                    <p> The stacked effects are presented with the element below:</p>
+                    <br>
+                    <div class="box-element">
+
+                    </div>
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+                       
+            <div class="item_contents" id = "first_letter_&_first_line">
+                <h4>FIRST LETTER & FIRST LINE</h4>
+
+                    <p>
+                        The first letter pseudo element makes the first letter different from
+                        the remaining characters in a text. 
+                        This effect is presented is the following paragraph. 
+                    <p>
+                        
+                    <p class="first_letter"> 
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Exercitationem eius numquam adipisci iure. Adipisci, omnis expedita vero, 
+                         magnam vel laborum asperiores recusandae atque porro, 
+                         temporibus odit laboriosam sapiente quos error.
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Exercitationem eius numquam adipisci iure. Adipisci, omnis expedita vero, 
+                         magnam vel laborum asperiores recusandae atque porro, 
+                         temporibus odit laboriosam sapiente quos error.
+                    </p>
+                   
+                    <p class="first_line"> 
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Exercitationem eius numquam adipisci iure. Adipisci, omnis expedita vero, 
+                         magnam vel laborum asperiores recusandae atque porro, 
+                         temporibus odit laboriosam sapiente quos error.
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Exercitationem eius numquam adipisci iure. Adipisci, omnis expedita vero, 
+                         magnam vel laborum asperiores recusandae atque porro, 
+                         temporibus odit laboriosam sapiente quos error.
+                    </p>
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "selection">
+                <h4>SELECTION</h4>
+
+                    <p>
+                        The selection pseudo element lets us customize the effects 
+                        when we select an element. 
+                        In the paragraph below, when we select the text, 
+                        we can change de background color and the color of the letters.
+                    <p>
+                        
+                    <p class="selection_effect">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis esse laboriosam, animi aperiam beatae omnis ab repellat distinctio eum nulla provident! Nam odit necessitatibus exercitationem tenetur laudantium itaque corrupti.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis esse laboriosam, animi aperiam beatae omnis ab repellat distinctio eum nulla provident! Nam odit necessitatibus exercitationem tenetur laudantium itaque corrupti.
+                    </p>
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "transitions">
+                <h4>TRANSITIONS</h4>
+
+                    <p>
+                        Transitions are suitable for configuring some  animation effects for 
+                        the elements as illustrated below:
+                    <p>
+                    
+                    <div class="transition_1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quam deserunt suscipit, aspernatur quisquam maiores atque 
+                        possimus nam voluptas pariatur fuga eum neque? Recusandae maiores
+                         illum porro natus, sunt praesentium veniam.
+                    </div>
+                    
+                    <div class="transition_2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error, facere, recusandae ipsam dolores consequatur facilis 
+                        dolorem dignissimos provident culpa nihil magnam accusantium mollitia
+                        quibusdam cupiditate atque eum excepturi nobis aspernatur.
+                    </div>
+                    
+                    <a href="#transitions">
+                        <div class="transition_3">Click Here</div>
+                    </a>
+
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+           
+            <div class="item_contents" id = "gradient_background">
+                <h4>GRADIENT BACKGROUND</h4>
+
+                    <p>
+                        Gradient backround is used to configure many features for the background
+                        like color, opacity, angle, rotation and other properties.
+                    <p>
+                    <p>
+                        For personalized purposes to generate CSS gradients, one could use the tools in the link:
+                        <br>
+                        <a href="https://cssgradient.io/" target="_blank">https://cssgradient.io/</a>
+                    
+                    </p>
+                    <div class = "gradient_background_1">
+                       <p> This is a customized gradient background</p>  
+                    </div>
+                    
+                    <div class = "gradient_background_2">
+                       <p> This is another customized gradient background</p>  
+                    </div>
+                   
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "layering_gradient_background">
+                <h4>LAYERING GRADIENTS ON BACKGROUND</h4>
+
+                    <p>
+                        Layering gradients are very useful when we need to adjust the background color
+                        behind another background like images ou texts areas.
+                    <p>
+                    
+                    <div class = "layered_gradient_background">
+                       <p> 
+                        This is an element which has layered gradient backgrounds. 
+                        In this case we have a background-image with a background-color gradient. 
+                        All together contrast better with this text.
+                       </p>  
+                    </div>
+                                       
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "custom_web_fonts">
+                <h4>CUSTOM WEB FONTS</h4>
+
+                    <p>
+                        Custom web fonts can be found on the web like google:
+                    <p>
+                    
+                    <p>
+                        <a href="https://fonts.google.com/", target="_blank">
+                            fonts by google
+                        </a>
+                    </p>
+
+                    <p class="custom_web_fonts">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Aspernatur nemo, animi reiciendis fuga beatae nobis molestiae 
+                         fugiat pariatur vero necessitatibus est quo cupiditate dolorem nisi 
+                         atque provident similique accusantium! Repudiandae.
+                    </p>
+                    
+                    
+                                       
+                          
+                    <div>
+                        <a href="#navigation"> Back to Navigation Topics</a>
+                    </div>
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "transformation">
+                <h4>TRANSFORMATION</h4>
+
+                    <p>
+                        Transformations enable us to configure the elements in a variety of differente shapes.
+                    <p>
+                 
+                <div class="display: inline">
+                    <div class="transformation_1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsum sequi dolores voluptate sit rerum eius ipsam commodi 
+                        
+                    </div>
+                    
+                    <div class="transformation_2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsum sequi dolores voluptate sit rerum eius ipsam commodi 
+                        
+                    </div>
+                    
+                    <div class="transformation_3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsum sequi dolores voluptate sit rerum eius ipsam commodi 
+                        
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#navigation"> Back to Navigation Topics</a>
+                </div>
+                
+                                             
+                    
+                
+                    
+
+
+                       
+            </div>
+            
+            <div class="item_contents" id = "animation">
+                <h4>ANIMATIONS</h4>
+
+                    <p>
+                        Animations classes can be enabled using the @keyframe attributes as shown 
+                        by the boxes elements below:
+                    <p>
+                    
+                    <div class="animation_box">
+                        
+                        <div class="animation_1">
+                            
+                                Translations
+                            
+                        </div>
+                    
+                    </div>
+
+                    <div class="animation_box">
+                        
+                        <div class="animation_2">
+                           
+                            Rotations
+                 
+                        </div>
+                    
+                    </div>
+
+                <div>
+                    <a href="#navigation"> Back to Navigation Topics</a>
+                </div>
+                
+                                             
+                    
+                
+                    
+
+
+                       
+            </div>
+           
+            <div class="item_contents" id = "flexbox">
+                <h4>FLEXBOX</h4>
+
+                    <p>
+                        The flexbox attributes is very useful when we need build a layout for a web page.
+                    <p>
+                    
+                    <div id = "container">
+                        <div class="header_container"> FLEXBOX</div>
+                        <div class = "navi_container">
+                        <h4> Navigation Bar </h4>
+                            All done with flex attributes
+                            <ul>
+                                <h5>TOPICS</h5>
+                                <li>A</li>
+                                <li>B</li>
+                                <li>C</li>
+                                <li>D</li>
+                            </ul>
+                       </div>
+                       <div class = "content_container">
+                        
+                        <h4> Content Section</h4>
+                        
+                        <p>All done with flex attributes</p>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat veritatis nesciunt, eum neque eos sit numquam deleniti impedit laboriosam unde magni, obcaecati, dicta officia sunt voluptas inventore labore voluptates enim!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat veritatis nesciunt, eum neque eos sit numquam deleniti impedit laboriosam unde magni, obcaecati, dicta officia sunt voluptas inventore labore voluptates enim!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat veritatis nesciunt, eum neque eos sit numquam deleniti impedit laboriosam unde magni, obcaecati, dicta officia sunt voluptas inventore labore voluptates enim!</p>
+                       </div>
+                    </div>
+                    
+                    
+
+                <div>
+                    <a href="#navigation"> Back to Navigation Topics</a>
+                </div>
+                
+                                             
+                    
+                
+                    
+
+
+                       
+            </div>
+                        
+        </div>
+                
+                    
+             
+        
+        
+        <div class="footnotes_border footnotes_space">
+            <div class="footnotes_contents">
+                FOOTNOTES
+            </div>
+            <div class="footnotes_contents">
+                &copy; Vinícius Mariucci 2022
+            </div>
+            <div class = "link_to_navibar_at_footnotes">
+                <a href="#navigation"> Back to Navigation Topics</a>
+            </div>
+    
+        </div>
+   </div>
+   
+</body>
+</html>
