@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL PROJECT CSS 301</title>
+    <style>
+        *{
+            box-sizing: border-box;  
+        }
+        body{
+            background-color: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+        #page-layout{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+        }
+        #navibar{
+            flex-basis: 100%;
+            padding: 20px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        #topicsbar{
+            flex-basis: 20%;
+            padding: 20px;
+            border: 1px solid red;
+        }
+        #contents{
+            flex-basis: 80%;
+            padding: 20px;
+            border: 1px solid red;
+        }
+        ul{
+            font-size: 40px;
+            padding: 30px;
+            margin-top: 10px;
+        }
+        .box{
+            position:relative;
+            overflow: hidden;
+            width: 100%;
+
+        }
+       .box img{
+            display: block;
+            position: relative;
+            width: 50%;
+            height: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+        .container iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width: 640px) {
+            #topicsbar, #contents{
+                flex-basis: 100%;
+                border-right: 0;
+            }
+        }
+        @media(max-width: 475px){
+            #topicsbar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="page-layout">
+
+        <div id="navibar">
+            <h1>FINAL PROJECT CSS 301</h1>
+        </div>
+        
+        <div id="topicsbar"> 
+            <ul>
+                <li>
+                    <a href="#images">Images</a>
+                </li>
+                <li>
+                    <a href="#videos">Videos</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="contents"> 
+            <h2>IMAGES</h2> 
+            
+            <div class="box" id="images">
+            
+            <img src="https://images.unsplash.com/photo-1502836409737-232b37c6716d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" alt="">
+            <hr>
+            <img src="https://images.unsplash.com/photo-1513569143478-b38b2c0ef97f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+            <hr>
+            <img src="https://images.unsplash.com/photo-1537519646099-335112f03225?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+            <hr>
+            <img src="https://images.unsplash.com/photo-1520116468816-95b69f847357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+            
+            <hr>
+            </div>
+            
+            <h2>VIDEOS</h2>
+            <div class="container">
+            
+                <div id = "videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_rtnu09yLfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div> 
+    </div>      
+
+</body>
+</html>
