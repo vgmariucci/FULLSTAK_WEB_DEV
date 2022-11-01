@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery_101_FINAL_PROJECT</title>
+
+    <style>
+        /*********************************
+         BODY CALSSES
+        **********************************/
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Uchen', serif;
+
+        }
+
+        #grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 3 px;
+            grid-row-gap: 3px;
+        }
+
+        /***********************************
+        MAIN HEADER CLASSES
+        *************************************/
+        .header_space{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .header_border{
+            border: 1px solid hsl(276, 80%, 60%);
+        }
+
+        .header_master{
+            text-align: center;
+            position: relative;
+            padding: 15px;
+        }
+
+        .navigator_border{
+            border: 1px solid hsl(276, 80%, 60%);
+        }
+
+        .navigator_header{
+            position: relative;
+            padding: 10px;
+        }
+
+        .navigation_space{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .navigation_topics{
+            padding: 10px;
+        }
+
+        /***********************************
+        CONTENTS CLASSES
+        ***********************************/
+        .contents_border{
+            border: 1px solid hsl(276, 80%, 60%);
+        }
+
+        .contents_header{
+            position: relative;
+            padding: 30 px;
+        }
+
+        .contents{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .item_contents{
+            padding: 30px;
+        }
+
+        /*********************************
+        FOOTNOTES CLASSES
+        *******************************/
+        .footnotes_boder{
+            border: 1px solid hsl(276, 80%, 60%);
+        }
+
+        .footnotes_space{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .footnotes_contents{
+            text-align: center;
+            position: relative;
+            padding: 30px;
+        }
+        .link_to_navibar_at_footnotes{
+            padding: 20px;
+        }
+
+        .image{
+            height: auto;
+            width: 300px;
+            box-shadow: 10px 10px 5px blueviolet
+        }
+
+        .centered_box{
+            width: 300px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 10px auto;
+    }
+    </style>
+
+</head>
+<body>
+
+<div id = "grid">
+
+    <div class="header_border header_space">
+        <h1 class="header_master">jQuery-101 FINAL PROJECT</h1>
+    </div>
+
+    <div class="navigation_border navigation_space" id="navigation">
+      <ul>
+       <button class="getRandom">Random Character Selection</button>
+
+       <p>
+        <h4 id="character_specs"> CHARACTER SPECS</h4>
+
+        <li>
+            Name: <span id="name"></span>
+        </li>
+        
+        <li>
+            Heigh: <span id="height"></span>
+        </li>
+        
+        <li>
+            Mass: <span id="mass"></span>
+        </li>
+
+    </p>
+     </ul>
+        
+    </div>
+
+    <div class="contents_border contents">
+        <div class="item_contents">
+
+
+            <div class="centered_box">
+                <img class="image" src="" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footnotes_border footnotes_space">
+        <div class="footnotes_contents">
+            &copy; Vinícius Mariucci 2022
+        </div>
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    //jQuery in here
+    
+    let character_rdmNumber;
+
+     $("button").on("click", function(){
+        
+        //Generates a random number between 1 and 88
+        
+        character_rdmNumber = Math.ceil(88 * Math.random());
+        
+        console.log(character_rdmNumber);
+
+        let random_character_url = 'https://akabab.github.io/starwars-api/api/id/'+ String(character_rdmNumber) +'.json';
+    
+        $.get(random_character_url , function(data)
+        {
+        console.log(data);
+        console.log(data['name']);
+        console.log(data['height']);
+        console.log(data['mass']);
+
+        $("#name").text(data['name']);
+        $("#height").text(data['height'] + ' cm');
+        $("#mass").text(data['mass'] + ' kg');
+
+        $("img").attr('src',data['image']);
+        });
+    
+      });
+
+    
+    
+
+    });
+    </script>
+</body>
+</html>

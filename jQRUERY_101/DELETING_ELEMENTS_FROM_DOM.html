@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 101</title>
+</head>
+<body>
+    
+     <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore impedit vitae sapiente consectetur 
+            iusto laboriosam eum minus molestiae ipsum. Magnam facilis omnis accusamus provident maxime animi quae 
+            incidunt laborum dolor?
+        
+        </p>        
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore impedit vitae sapiente consectetur 
+            incidunt laborum dolor?
+            iusto laboriosam eum minus molestiae ipsum. Magnam facilis omnis accusamus provident maxime animi quae
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore impedit vitae sapiente consectetur 
+        <p class="middle-paragraph">
+            iusto laboriosam eum minus molestiae ipsum. Magnam facilis omnis accusamus provident maxime animi quae 
+            incidunt laborum dolor?
+        </p>
+        <p>
+            iusto laboriosam eum minus molestiae ipsum. Magnam facilis omnis accusamus provident maxime animi quae 
+            incidunt laborum dolor?
+        </p>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+         //jQuery in here
+         $("div p.middle-paragraph").remove();
+         //$("div").remove();
+        });
+    </script>
+</body>
+</html>

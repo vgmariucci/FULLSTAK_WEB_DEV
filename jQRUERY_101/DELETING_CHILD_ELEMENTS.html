@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 101</title>
+</head>
+<body>
+    
+     <div id="parent"><!-- Parent element -->
+        <strong>Bolded word here</strong>
+        <em>Italicized word here</em>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maiores, nemo assumenda amet 
+            explicabo dolorum libero quae porro animi eius doloremque repellat aspernatur. Similique, expedita at? 
+            Laudantium quia aliquid iure.
+        </p>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+         //jQuery in here
+
+         //$("div#parent").empty();
+         //$("div#parent").empty().html("<h1>Hello World</h1>");
+         
+         const $parent = $("div#parent");
+         //$parent.empty();
+         //$parent.html("Stuff in here");
+        
+         $parent.html("Stuff in here and there are no child elements");
+
+        });
+    </script>
+</body>
+</html>

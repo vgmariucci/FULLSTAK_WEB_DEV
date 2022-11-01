@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 101</title>
+</head>
+<body>
+    <div>
+        <button id="button1">Button 1</button>
+    </div>
+    
+    <br>
+
+    <div>
+        <button id="button2">Button 2</button>
+    </div>
+
+    <br>
+    
+    <div id="button3">
+
+    </div>
+    
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        //jQuery in here
+       
+        // $("button").click(function() {
+       // console.log("I am clicked!")
+       // });
+
+       // $("button").on("click", function(){
+       //     console.log("This is clickable too!");
+       // });
+
+       // $(document).on("click","button", function(){
+      //      console.log("This is third way capture click events!");
+      //  });
+        
+        $(document).on("click","#button1", function(){
+            console.log("Fixed Button1 Clicked!");
+        });
+        
+        $(document).on("click","#button2", function(){
+            console.log("Fixed Button2 Clicked!");
+        });
+        
+        const $parent = $("#button3");
+        $parent.html("<button> Button 3 </button>");
+
+        $(document).on("click","#button3", function(){
+            console.log("Dynamically Generated Button2 Clicked!");
+        });
+
+        });
+    </script>
+</body>
+</html>

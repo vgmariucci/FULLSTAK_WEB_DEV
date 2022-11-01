@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 101</title>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .width-100{
+        width: 100%;
+    }
+    .orange{
+        background-color: orange;
+    }
+</style>
+
+</head>
+<body>
+    <div>
+        <button id="button_1">Change Box Class</button>
+        <button id="button_2">Toggle Box Class</button>
+    </div>
+    
+    <br>
+    
+    <div class="box"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        //jQuery in here
+        
+       // setTimeout(()=>{
+
+       //      $(".box").addClass("blue"); 
+        
+       //  }, 2000);
+
+       
+        // One way to toggle add and remove classes
+        let status = true;
+
+        $("#button_1").on("click", ()=>{
+           
+           status = !status;
+
+           if (status){
+            $(".box").addClass("blue width-100");
+            
+
+            }
+            else if(!status){
+            $(".box").removeClass("blue width-100");
+            
+            }
+
+        });
+
+        // Another way to toggle classes
+        $("#button_2").on("click", () => {
+            $(".box").toggleClass("orange");
+        });
+       
+        });
+    </script>
+</body>
+</html>

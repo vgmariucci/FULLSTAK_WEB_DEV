@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 101</title>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+ 
+</style>
+
+</head>
+<body>
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <div>Fourth Item</div>
+    <div>Fifth Item</div>
+    <div>Sixth Item</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    //jQuery in here
+    
+    $("li").each(function(index, element) {
+        const originalText = $(element).text();
+        $(element).text(`${index + 1}. ${originalText}`);
+
+        if(index + 1 == 2){
+            $(element)
+            .css("background-color", "black")
+            .css("color", "white")
+        }
+    })
+
+    $("div").each(function(index, element) {
+        const originalText = $(element).text();
+        $(element).text(`${index + 4}. ${originalText}`);
+
+        if(index + 4 == 6){
+            $(element)
+            .css("background-color", "black")
+            .css("color", "white")
+        }
+    })
+            
+    });
+    </script>
+</body>
+</html>
