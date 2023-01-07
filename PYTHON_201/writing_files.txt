@@ -1,0 +1,4 @@
+Hello from Python 201!
+This is file created by Python's Writing File Method
+
+This line was created by appending this text to the created file
